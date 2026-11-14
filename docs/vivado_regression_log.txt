@@ -1,0 +1,423 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/tb/uvm/ring_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/tb/rnm/ring_plant_rnm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ring_plant_rnm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/tb/uvm/ring_sva.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ring_sva
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/rtl/ring_tuner.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ring_tuner
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/rtl/ring_tuner_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ring_tuner_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/rtl/sigma_delta_dac.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_delta_dac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/tb/uvm/tb_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/vivado_proj/ring_uvm.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log -L uvm"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log -L uvm 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.ring_pkg
+Compiling module xil_defaultlib.ring_if_default
+Compiling module xil_defaultlib.ring_sva
+Compiling module xil_defaultlib.ring_tuner_default
+Compiling module xil_defaultlib.sigma_delta_dac
+Compiling module xil_defaultlib.ring_tuner_top
+Compiling module xil_defaultlib.ring_plant_rnm
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:54 . Memory (MB): peak = 1689.023 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '53' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/vivado_proj/ring_uvm.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log} -testplusarg UVM_TESTNAME=ring_lock_test"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test ring_lock_test...
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------
+Name                       Type                    Size  Value
+--------------------------------------------------------------
+uvm_test_top               ring_lock_test          -     @341 
+  env                      ring_env                -     @354 
+    agt                    ring_agent              -     @363 
+      drv                  ring_driver             -     @529 
+        rsp_port           uvm_analysis_port       -     @548 
+        seq_item_port      uvm_seq_item_pull_port  -     @538 
+      mon                  ring_monitor            -     @558 
+        ap                 uvm_analysis_port       -     @567 
+      sqr                  uvm_sequencer           -     @392 
+        rsp_export         uvm_analysis_export     -     @401 
+        seq_item_export    uvm_seq_item_pull_imp   -     @519 
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+    sb                     ring_scoreboard         -     @372 
+      analysis_imp         uvm_analysis_imp        -     @381 
+--------------------------------------------------------------
+
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 0: uvm_test_top.env.agt.drv [DRV] scenario: offset 1138 pm, drift 0 mK/ms, noise 0 LSB, track 460 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 1356415000: uvm_test_top.env.sb [SB] PASS offset 1138 pm | drift     0 mK/ms | noise 0 | lock 69634 clk (0.696 ms) | |detune| mean 6.5 max 17.2 pm | ambient moved 0.00 K
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 1356420000: uvm_test_top.env.agt.drv [DRV] scenario: offset 1983 pm, drift 0 mK/ms, noise 1 LSB, track 504 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 2736355000: uvm_test_top.env.sb [SB] PASS offset 1983 pm | drift     0 mK/ms | noise 1 | lock 67586 clk (0.676 ms) | |detune| mean 6.5 max 16.3 pm | ambient moved 0.00 K
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 2736360000: uvm_test_top.env.agt.drv [DRV] scenario: offset 1194 pm, drift 0 mK/ms, noise 0 LSB, track 300 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 3912295000: uvm_test_top.env.sb [SB] PASS offset 1194 pm | drift     0 mK/ms | noise 0 | lock 67586 clk (0.676 ms) | |detune| mean 6.5 max 17.1 pm | ambient moved 0.00 K
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 3912300000: uvm_test_top.env.agt.drv [DRV] scenario: offset 1053 pm, drift 0 mK/ms, noise 2 LSB, track 463 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 5251235000: uvm_test_top.env.sb [SB] PASS offset 1053 pm | drift     0 mK/ms | noise 2 | lock 67586 clk (0.676 ms) | |detune| mean 6.4 max 15.3 pm | ambient moved 0.00 K
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 5251240000: uvm_test_top.env.agt.drv [DRV] scenario: offset 1798 pm, drift 0 mK/ms, noise 1 LSB, track 416 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 6543175000: uvm_test_top.env.sb [SB] PASS offset 1798 pm | drift     0 mK/ms | noise 1 | lock 67586 clk (0.676 ms) | |detune| mean 6.5 max 16.4 pm | ambient moved 0.00 K
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(19968) @ 6544180000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(129) @ 6544180000: uvm_test_top.env.agt.mon [MON] coverage 57.8% (offset 66.7%, drift 33.3%, noise 66.7%, lock 100.0%, offset x drift 22.2%)
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(49) @ 6544180000: uvm_test_top.env.sb [SB] scenarios passed=5 failed=0  slowest lock=69634 clk  worst |detune|=17.2 pm
+
+==============================================
+  ring_lock_test : PASSED
+==============================================
+
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(13673) @ 6544180000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   18
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRV]     5
+[MON]     1
+[NO_DPI_TSTNAME]     1
+[RNTST]     1
+[SB]     6
+[TEST_DONE]     1
+[UVM/COMP/NAMECHECK]     1
+[UVM/RELNOTES]     1
+[UVMTOP]     1
+
+$finish called at time : 6544180 ns : File "D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:59 . Memory (MB): peak = 1689.023 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -name {xsim.simulate.xsim.more_options} -value {-testplusarg UVM_TESTNAME=ring_drift_test} -objects [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Sat Nov 14 07:12:25 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/vivado_proj/ring_uvm.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/vivado_proj/ring_uvm.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L uvm -prj tb_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/vivado_proj/ring_uvm.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log -L uvm"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log -L uvm 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1689.023 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/vivado_proj/ring_uvm.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log} -testplusarg UVM_TESTNAME=ring_drift_test"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test ring_drift_test...
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------
+Name                       Type                    Size  Value
+--------------------------------------------------------------
+uvm_test_top               ring_drift_test         -     @341 
+  env                      ring_env                -     @354 
+    agt                    ring_agent              -     @363 
+      drv                  ring_driver             -     @529 
+        rsp_port           uvm_analysis_port       -     @548 
+        seq_item_port      uvm_seq_item_pull_port  -     @538 
+      mon                  ring_monitor            -     @558 
+        ap                 uvm_analysis_port       -     @567 
+      sqr                  uvm_sequencer           -     @392 
+        rsp_export         uvm_analysis_export     -     @401 
+        seq_item_export    uvm_seq_item_pull_imp   -     @519 
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+    sb                     ring_scoreboard         -     @372 
+      analysis_imp         uvm_analysis_imp        -     @381 
+--------------------------------------------------------------
+
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 0: uvm_test_top.env.agt.drv [DRV] scenario: offset 1143 pm, drift -616 mK/ms, noise 0 LSB, track 541 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 1437415000: uvm_test_top.env.sb [SB] PASS offset 1143 pm | drift  -616 mK/ms | noise 0 | lock 69634 clk (0.696 ms) | |detune| mean 6.6 max 17.6 pm | ambient moved -0.33 K
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 1437420000: uvm_test_top.env.agt.drv [DRV] scenario: offset 483 pm, drift 185 mK/ms, noise 2 LSB, track 564 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 2877355000: uvm_test_top.env.sb [SB] PASS offset  483 pm | drift   185 mK/ms | noise 2 | lock 67586 clk (0.676 ms) | |detune| mean 6.5 max 17.0 pm | ambient moved 0.10 K
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 2877360000: uvm_test_top.env.agt.drv [DRV] scenario: offset 784 pm, drift 225 mK/ms, noise 1 LSB, track 403 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 4156295000: uvm_test_top.env.sb [SB] PASS offset  784 pm | drift   225 mK/ms | noise 1 | lock 67586 clk (0.676 ms) | |detune| mean 6.5 max 17.0 pm | ambient moved 0.09 K
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 4156300000: uvm_test_top.env.agt.drv [DRV] scenario: offset 1484 pm, drift 503 mK/ms, noise 1 LSB, track 563 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 5595235000: uvm_test_top.env.sb [SB] PASS offset 1484 pm | drift   503 mK/ms | noise 1 | lock 67586 clk (0.676 ms) | |detune| mean 6.3 max 16.9 pm | ambient moved 0.28 K
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 5595240000: uvm_test_top.env.agt.drv [DRV] scenario: offset 1798 pm, drift 898 mK/ms, noise 1 LSB, track 596 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 7067175000: uvm_test_top.env.sb [SB] PASS offset 1798 pm | drift   898 mK/ms | noise 1 | lock 67586 clk (0.676 ms) | |detune| mean 6.3 max 17.0 pm | ambient moved 0.54 K
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 7067180000: uvm_test_top.env.agt.drv [DRV] scenario: offset 975 pm, drift -153 mK/ms, noise 2 LSB, track 422 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 8365115000: uvm_test_top.env.sb [SB] PASS offset  975 pm | drift  -153 mK/ms | noise 2 | lock 67586 clk (0.676 ms) | |detune| mean 6.5 max 16.2 pm | ambient moved -0.06 K
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(19968) @ 8366120000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(129) @ 8366120000: uvm_test_top.env.agt.mon [MON] coverage 84.4% (offset 100.0%, drift 100.0%, noise 66.7%, lock 100.0%, offset x drift 55.6%)
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(49) @ 8366120000: uvm_test_top.env.sb [SB] scenarios passed=6 failed=0  slowest lock=69634 clk  worst |detune|=17.6 pm
+
+==============================================
+  ring_drift_test : PASSED
+==============================================
+
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(13673) @ 8366120000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   20
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRV]     6
+[MON]     1
+[NO_DPI_TSTNAME]     1
+[RNTST]     1
+[SB]     7
+[TEST_DONE]     1
+[UVM/COMP/NAMECHECK]     1
+[UVM/RELNOTES]     1
+[UVMTOP]     1
+
+$finish called at time : 8366120 ns : File "D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1689.441 ; gain = 0.418
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1689.441 ; gain = 0.418
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -name {xsim.simulate.xsim.more_options} -value {-testplusarg UVM_TESTNAME=ring_noise_test} -objects [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Sat Nov 14 07:13:25 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/vivado_proj/ring_uvm.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/vivado_proj/ring_uvm.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L uvm -prj tb_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/vivado_proj/ring_uvm.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log -L uvm"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log -L uvm 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2052.562 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/vlsi/ring-tuning-rnm/ring-tuning-rnm/vivado_proj/ring_uvm.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log} -testplusarg UVM_TESTNAME=ring_noise_test"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test ring_noise_test...
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------
+Name                       Type                    Size  Value
+--------------------------------------------------------------
+uvm_test_top               ring_noise_test         -     @341 
+  env                      ring_env                -     @354 
+    agt                    ring_agent              -     @363 
+      drv                  ring_driver             -     @529 
+        rsp_port           uvm_analysis_port       -     @548 
+        seq_item_port      uvm_seq_item_pull_port  -     @538 
+      mon                  ring_monitor            -     @558 
+        ap                 uvm_analysis_port       -     @567 
+      sqr                  uvm_sequencer           -     @392 
+        rsp_export         uvm_analysis_export     -     @401 
+        seq_item_export    uvm_seq_item_pull_imp   -     @519 
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+    sb                     ring_scoreboard         -     @372 
+      analysis_imp         uvm_analysis_imp        -     @381 
+--------------------------------------------------------------
+
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 0: uvm_test_top.env.agt.drv [DRV] scenario: offset 1143 pm, drift -172 mK/ms, noise 4 LSB, track 541 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 1437415000: uvm_test_top.env.sb [SB] PASS offset 1143 pm | drift  -172 mK/ms | noise 4 | lock 69634 clk (0.696 ms) | |detune| mean 6.5 max 16.0 pm | ambient moved -0.09 K
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 1437420000: uvm_test_top.env.agt.drv [DRV] scenario: offset 483 pm, drift -166 mK/ms, noise 3 LSB, track 564 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 2877355000: uvm_test_top.env.sb [SB] PASS offset  483 pm | drift  -166 mK/ms | noise 3 | lock 67586 clk (0.676 ms) | |detune| mean 6.5 max 16.5 pm | ambient moved -0.09 K
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 2877360000: uvm_test_top.env.agt.drv [DRV] scenario: offset 784 pm, drift 153 mK/ms, noise 4 LSB, track 403 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 4156295000: uvm_test_top.env.sb [SB] PASS offset  784 pm | drift   153 mK/ms | noise 4 | lock 67586 clk (0.676 ms) | |detune| mean 6.5 max 17.5 pm | ambient moved 0.06 K
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(29) @ 4156300000: uvm_test_top.env.agt.drv [DRV] scenario: offset 1484 pm, drift 51 mK/ms, noise 4 LSB, track 563 us
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(44) @ 5595235000: uvm_test_top.env.sb [SB] PASS offset 1484 pm | drift    51 mK/ms | noise 4 | lock 67586 clk (0.676 ms) | |detune| mean 6.4 max 16.2 pm | ambient moved 0.03 K
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(19968) @ 5596240000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../../../../../tb/uvm/ring_agent.svh(129) @ 5596240000: uvm_test_top.env.agt.mon [MON] coverage 60.0% (offset 100.0%, drift 33.3%, noise 33.3%, lock 100.0%, offset x drift 33.3%)
+UVM_INFO ../../../../../tb/uvm/ring_env_tests.svh(49) @ 5596240000: uvm_test_top.env.sb [SB] scenarios passed=4 failed=0  slowest lock=69634 clk  worst |detune|=17.5 pm
+
+==============================================
+  ring_noise_test : PASSED
+==============================================
+
+UVM_INFO D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(13673) @ 5596240000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   16
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRV]     4
+[MON]     1
+[NO_DPI_TSTNAME]     1
+[RNTST]     1
+[SB]     5
+[TEST_DONE]     1
+[UVM/COMP/NAMECHECK]     1
+[UVM/RELNOTES]     1
+[UVMTOP]     1
+
+$finish called at time : 5596240 ns : File "D:/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2052.562 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2052.562 ; gain = 0.000

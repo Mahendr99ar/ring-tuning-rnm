@@ -1,0 +1,29 @@
+
+6. Printing statistics.
+
+=== ring_tuner_top ===
+
+   Number of wires:                835
+   Number of wire bits:           1049
+   Number of public wires:          38
+   Number of public wire bits:     252
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                929
+     $_ANDNOT_                     274
+     $_AND_                         35
+     $_DFFE_PN0N_                   12
+     $_DFFE_PN0P_                   76
+     $_DFFE_PN1P_                   10
+     $_DFF_PN0_                     20
+     $_DFF_PN1_                      1
+     $_MUX_                         58
+     $_NAND_                        58
+     $_NOR_                         68
+     $_NOT_                         28
+     $_ORNOT_                       50
+     $_OR_                         106
+     $_XNOR_                        49
+     $_XOR_                         84
+
